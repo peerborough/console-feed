@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "linkifyjs": "^2.1.6",
-    "react-inspector": "^5.1.0"
+    "react-inspector": "^6.0.1"
   },
   "devDependencies": {
     "@emotion/core": "^11.0.0",

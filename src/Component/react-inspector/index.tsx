@@ -1,7 +1,8 @@
+// @ts-nocheck
 import { withTheme } from '@emotion/react'
 import * as React from 'react'
 import {
-  DOMInspector,
+  //DOMInspector,
   Inspector,
   ObjectLabel,
   ObjectName,
@@ -48,7 +49,8 @@ class CustomInspector extends React.PureComponent<Props, any> {
           </Table>
         ) : dom ? (
           <HTML>
-            <DOMInspector {...this.props} theme={styles} />
+            {/* <DOMInspector {...this.props} theme={styles} /> */}
+            <Inspector {...this.props} theme={styles} />
           </HTML>
         ) : (
           <Inspector
@@ -91,7 +93,8 @@ class CustomInspector extends React.PureComponent<Props, any> {
     if (data instanceof HTMLElement)
       return (
         <HTML>
-          <DOMInspector data={data} theme={styles} />
+          {/* <DOMInspector data={data} theme={styles} /> */}
+          <Inspector data={data} theme={styles} />
         </HTML>
       )
     return null
